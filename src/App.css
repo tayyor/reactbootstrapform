@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --colorTheme: #007bff;
+  --colorText: #fff;
+  --colorBorder: #ff0;
+  --colorShowcase: #f8f9fa;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* navbar */
+.logo {
+  font-size: 20px;
+}
+h5{
+  color: #000;
+}
+.mainNav {
+  height: 70px;
+  color: var(--colorText);
+}
+
+.navbar a {
+  color: var(--colorText);
+  padding: 10px;
+  margin: 0 5px;
+  justify-content: center;
+}
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+.navbar.head {
+  background: yellow;
+}
+
+/* persDet */
+
+.card {
+  display: grid;
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 5rem 4rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.cards {
+  background-color: var(--colorShowcase);
+  width: 400px;
+  margin-left: 60px;
+}
+
+.fas {
+  padding: 0 0.8rem;
+}
+
+/* footer */
+
+.endpage {
+  background: var(--colorTheme);
+  height: 283px;
+}
+
+.endpage .grid a {
+  color: #000;
+}
+.endpage .social a {
+  margin: 10px 10px;
+}
+.endpage nav {
+  margin: 10px;
+}
+.endpage h1,
+p {
+  padding-left: 50px;
+  color: #000;
+}
+/* Utilities */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
